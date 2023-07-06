@@ -1,0 +1,128 @@
+@use "../mixins" as u;
+
+
+
+.aboutbox{
+
+    background-color:rgb(200, 200, 200);
+    color:black;
+    height: auto;  
+    border-bottom:1px solid rgb(255, 255, 255);
+    overflow:hidden;
+    &__summary{
+        padding: 80px 20px;
+        p{
+            text-align: center;
+            font-size: 1.6rem;
+        }
+    }
+    &__skills{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+
+        span{
+            text-align: center;
+            font-size: 2rem;
+            padding:15px 5px;
+            margin:15px 5px;
+            width:100vw;
+        }
+
+        img{
+        
+            height:30px;
+            width:30px;
+        }
+        .skillsum{
+            font-size: 1.3rem;
+            padding: 15px 10px 15px 10px;
+            text-align: center;
+        }
+
+        .row{
+            display:flex;
+            width:100%;
+            justify-content: space-around;
+            padding-bottom: 20px;
+        }
+
+        .aboutbox__language{
+            display:flex;
+            flex-wrap: wrap;
+            align-items: center;
+           
+        }
+
+        .aboutbox__framework
+        {
+            display:flex;
+            flex-wrap: wrap;
+
+        }
+        
+        .aboutbox__stack{
+            display:flex;
+            flex-wrap:wrap;
+
+        }
+    }
+}
+
+
+
+
+
+// about me --> media queries for tablets 
+@include u.device(600px)
+{   
+    .aboutbox{
+
+        &__summary{
+            margin-right:25px;
+            margin-left:25px;
+        }
+        p{
+            font-size: 2.1rem;
+        }
+        img{
+            height:45px;
+            width:45px;
+        }
+        span{
+            font-size:2.5rem;
+        }
+        .skillsum{
+            font-size:2rem;
+            text-align: center;
+            padding:5px 20px 30px 20px;
+        }
+        .row{
+            padding-top:20px;
+        }
+    }
+}
+
+@include u.device(960px)
+{   
+
+    .aboutbox{
+        &__summary{
+            margin-right:80px;
+            margin-left:80px;
+        }
+        .row{
+            padding-right:50px;
+            padding-left:50px;
+            margin-left:150px;
+            margin-right:150px;
+        }
+        .skillsum{
+            flex:1;
+            padding-top:20px;
+            padding-bottom:50px;
+        }
+    }
+}
+
+

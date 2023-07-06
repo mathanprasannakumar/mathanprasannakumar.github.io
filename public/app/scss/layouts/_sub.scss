@@ -1,0 +1,41 @@
+.subproject{
+    position: relative;
+    height:55vh;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before{
+        content:"";
+        background-image:url("/app/assets/blackhole.png");
+        background-size:cover;
+        position:absolute;
+        top:0px;
+        left:0;
+        right:0;
+        bottom:0px;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    span{
+        font-size:5rem; 
+    }
+
+    &__trynow{
+        margin-top: 50px;
+        justify-self: center;
+        text-align: center;
+        border-radius: 10%;
+        a{
+            color:white;
+            font-size:2.2rem;
+
+            &:hover{
+                background-color: rgb(255, 255, 255);
+                color:rgb(0, 0, 0);
+            }
+        }
+    }
+}

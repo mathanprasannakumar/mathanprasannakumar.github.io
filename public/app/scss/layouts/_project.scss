@@ -1,0 +1,120 @@
+@use "../mixins" as m;
+
+.project{
+    height:auto;
+    border-bottom: 1px solid white;
+    h3{
+        font-size:2.5rem;
+        text-align: center;
+        margin-top:50px;
+        margin-bottom:20px;
+    }
+
+    &__box{
+
+        .subbox{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 10px 20px 10px;
+            margin: 20px 20px 20px 20px;
+            // border: 1px solid rgb(255, 255, 255);
+            border-radius: 6%;
+            position: relative;
+            // background-color:rgba(62, 58, 58, 0.3)
+            img{
+                width:200px;
+                border-radius: 5%;
+                margin:15px 5px;
+            }
+
+            ::before{
+                content:"";
+                background-color:rgba(200, 200, 200, 0.04);
+                position:absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                z-index: -1;
+            }
+
+            p{
+                font-size:1.2rem;
+                margin:15px 2.5px;
+
+                text-align: justify;
+            }
+            span{
+                font-size:1.5rem;
+            }
+            &__links{
+
+                // display:grid;
+                // grid-template-columns: 1fr 1fr;
+                // grid-gap:20px;
+                // align-items: center;        
+                 
+                a{
+                    display:flex;
+                    justify-content: center;
+                    color:whitesmoke;
+                    border:1px solid white;
+                    border-radius: 15%;
+                    // margin-right:30px;
+                    font-size:1.5rem;
+                    background-color: rgb(41, 51, 87);
+                    font-family: sans-serif;
+                    &:hover{
+                        background-color: beige;
+                        color: darkslategrey;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+}
+
+
+
+// media query for tablets 
+@include m.device(600px)
+{
+    .project__box{  
+
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        padding-left:20px;
+        padding-right:20px;
+
+        .subbox{
+
+            p{
+                font-size:1.5rem;
+                margin-bottom: 20px;
+            }
+            span{
+                font-size:2rem;
+            }
+            a{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+    
+
+@include m.device(960px)
+{
+    .project__box{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+
+    }
+}
