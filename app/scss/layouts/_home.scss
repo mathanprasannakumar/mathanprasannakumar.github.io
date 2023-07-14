@@ -53,8 +53,11 @@
      }
      &__about{
         text-align: center;
+        // padding-left:250px;
+        // padding-right:250px;
         span{
             font-size:1.5rem;
+        
         }
      }
      &__links{
@@ -112,7 +115,6 @@
             }
          }
         &__intro{
-
             span{
                 font-size: 3.5rem;    
             }
@@ -162,7 +164,12 @@
             content:"";
             bottom:5vh;
         }
+        &__about{
+            padding-left:300px;
+            padding-right:300px;
 
+        }
+    }
     .homebox__links{
         .fa::before{
             font-size:4.3rem !important;
@@ -170,6 +177,5 @@
         .fab::before{
             font-size:4.3rem !important;
         }
-}
 }
 }

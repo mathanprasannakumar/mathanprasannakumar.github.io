@@ -14,8 +14,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/css/styles.css">
-        <!-- <script src="https://kit.fontawesome.com/59c4396d73.js" crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" href="/dist/styles.css">
     </head>
     <body>
         <div class="navbigbox">
@@ -39,7 +38,7 @@
                 </div>
                 <div class="homebox__about">
                     <span>
-                        Computer Vision Engineer | Specializing in Object detection 
+                        Passionate about computer vision and AI | I would love to unravel the mysteries of visual data for practical applications
                     </span>
                 </div>
                 <div class="homebox__links">
@@ -50,7 +49,7 @@
                     <a  href= "https://auth.geeksforgeeks.org/user/mathanprasannakumar" alt ="mathanprasannakumar gfg link" target="_blank"><i class="fa fa-code"></i></a>
                 </div>
                 <div class="homebox__resume">
-                    <a href="#" alt="mathanprasannakumar resume link" target="_blank">Resume</a>
+                    <a href="./app/assets/resume.pdf" alt="mathanprasannakumar resume link" target="_blank">Resume</a>
                 </div>
 
             </section>
@@ -96,6 +95,23 @@
             <section class="project" id="projects">
                 <h3>Projects</h3>
                 <div class="project__box"> 
+                    <div class="subbox">
+                        <img src="/app/assets/face.jpg">
+                        <span>Face attendance system</span>
+                        <p>Face Attendance webapplication which will run on browser , and connected to postgreSQL database for registering the attendance.</p>
+                        <div class="subbox__links">
+                            <a href="https://github.com/mathanprasannakumar/FACE-ATTENDANCE-APP">Github</a>
+                        </div>
+                    </div>
+                    <div class="subbox">    
+                        <img src="/app/assets/detection.jpeg">
+                        <span> Face detection</span>
+                        <p>Face detection system using VGG16 network,trained and tested from scratch.LFW dataset is used and manually annotated for training process</p>
+                        <div class="subbox__links">
+                            <a href="https://github.com/mathanprasannakumar/FaceDetection">Github</a>
+                        </div>
+                    </div>
+                    
                     <div class="subbox">    
                         <img src="/app/assets/mnist.png">
                         <span> MNIST - Digit Classifier </span>
@@ -103,15 +119,6 @@
                         <div class="subbox__links">
                             <a href="https://github.com/mathanprasannakumar/MNIST-RECOGNIZERCNN">Github</a>
                             <!-- <a href="/home/project1">Try Now</a> -->
-                        </div>
-                    </div>
-                    <div class="subbox">
-                        <img src="/app/assets/face.jpg">
-                        <span>Face recognition</span>
-                        <p>Siamese network is used,which will receive two images and find the embedding differance between the two images.Overall the accuracy is around 70%</p>
-                        <div class="subbox__links">
-                            <a href="#">Github</a>
-                            <!-- <a href="/home/project2">Try Now</a> -->
                         </div>
                     </div>
                     <!-- <div class="subbox">
@@ -128,8 +135,6 @@
         </main>
         <footer>
             <div class="end">
-            <p> hello </p>
-            <!-- <a   class = "email" href="#" alt ="mathanprasannakumar email id link" target="_blank"><i class="fa-solid fa-envelope fa-2xl"></i></a> -->
             </div>
         </footer>
         <script src="/app/js/index.js">
