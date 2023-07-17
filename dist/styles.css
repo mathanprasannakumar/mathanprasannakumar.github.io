@@ -397,6 +397,12 @@ span {
 .project__box .subbox span {
   font-size: 1.5rem;
 }
+.project__box .subbox__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
 .project__box .subbox__links a {
   display: flex;
   justify-content: center;

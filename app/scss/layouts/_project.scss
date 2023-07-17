@@ -43,7 +43,6 @@
             p{
                 font-size:1.2rem;
                 margin:15px 2.5px;
-
                 text-align: justify;
             }
             span{
@@ -51,10 +50,10 @@
             }
             &__links{
 
-                // display:grid;
-                // grid-template-columns: 1fr 1fr;
-                // grid-gap:20px;
-                // align-items: center;        
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap:20px;
+                align-items: center;        
                  
                 a{
                     display:flex;
