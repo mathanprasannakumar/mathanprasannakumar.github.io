@@ -1,9 +1,10 @@
 @use "../mixins" as m;
 
-.project{
+.internship{
     height:auto;
     border-bottom: 1px solid white;
-    //background-color: red;
+    background-color: rgb(200,200,200);
+    color:black;
     h3{
         font-size:2.5rem;
         text-align: center;
@@ -13,7 +14,7 @@
 
     &__box{
 
-        .subbox{
+        .cosubbox{
             display:flex;
             flex-direction: column;
             align-items: center;
@@ -21,6 +22,7 @@
             padding: 20px 10px 20px 10px;
             margin: 20px 20px 20px 20px;
             // border: 1px solid rgb(255, 255, 255);
+            background-color: rgb(182, 182, 182);
             border-radius: 6%;
             position: relative;
             // background-color:rgba(62, 58, 58, 0.3)
@@ -32,7 +34,7 @@
 
             ::before{
                 content:"";
-                background-color:rgba(200, 200, 200, 0.04);
+                background-color:rgba(255, 0, 0, 0.04);
                 position:absolute;
                 top:0;
                 left:0;
@@ -85,7 +87,7 @@
 // media query for tablets 
 @include m.device(600px)
 {
-    .project__box{  
+    .internship__box{  
 
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -93,7 +95,7 @@
         padding-left:20px;
         padding-right:20px;
 
-        .subbox{
+        .cosubbox{
 
             p{
                 font-size:1.5rem;
@@ -112,7 +114,7 @@
 
 @include m.device(960px)
 {
-    .project__box{
+    .internship__box{
         display:grid;
         grid-template-columns:repeat(3,1fr);
 

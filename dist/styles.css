@@ -497,4 +497,97 @@ span {
 .subproject__trynow a:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+}
+
+.internship {
+  height: auto;
+  border-bottom: 1px solid white;
+  background-color: rgb(200, 200, 200);
+  color: black;
+}
+.internship h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.internship__box .cosubbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px 20px 10px;
+  margin: 20px 20px 20px 20px;
+  background-color: rgb(182, 182, 182);
+  border-radius: 6%;
+  position: relative;
+}
+.internship__box .cosubbox img {
+  width: 200px;
+  border-radius: 5%;
+  margin: 15px 5px;
+}
+.internship__box .cosubbox ::before {
+  content: "";
+  background-color: rgba(255, 0, 0, 0.04);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.internship__box .cosubbox p {
+  font-size: 1.2rem;
+  margin: 15px 2.5px;
+  text-align: justify;
+}
+.internship__box .cosubbox span {
+  font-size: 1.5rem;
+}
+.internship__box .cosubbox__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+.internship__box .cosubbox__links a {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  border: 1px solid white;
+  border-radius: 15%;
+  font-size: 1.5rem;
+  background-color: rgb(41, 51, 87);
+  font-family: sans-serif;
+}
+.internship__box .cosubbox__links a:hover {
+  background-color: beige;
+  color: darkslategrey;
+}
+
+@media (min-width: 600px) {
+  .internship__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .internship__box .cosubbox p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .internship__box .cosubbox span {
+    font-size: 2rem;
+  }
+  .internship__box .cosubbox a {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 960px) {
+  .internship__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }/*# sourceMappingURL=styles.css.map */
