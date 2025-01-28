@@ -1,0 +1,9 @@
+services:
+  frontend: 
+    build:
+      context: frontend
+    environment: 
+      - DISPLAY=:1
+    volumes:
+      - /home/mat/mathanprasannakumar.github.io/frontend:/app
+    tty: true
