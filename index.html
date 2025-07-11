@@ -1,195 +1,263 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Welcome</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css">
-        <link rel="icon" type="image/x-icon" href="/app/assets/favicon.ico">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/dist/styles.css">
-    </head>
-    <body>
-        <div class="navbigbox">
-            <ul class="navbox">
-                <li class="navbox__logo"><a>Mathan Prasanna Kumar</a></li>
-                <li class="navbox__item navbox__tab"><a href="/" alt="link to the Home page">Home</a></li>
-                <li class="navbox__item navbox__tab"><a href="#about" alt="link to the about page">About</a></li>
-                <li class="navbox__item"><a href="#projects" alt="link to the projects">Projects</a></li>
-                <li class="navbox__bar"><a href="#"><i class="fas fa-bars"></i></a></li>
-            </ul>
-        </div>  
-        <main>
-            <section class="homebox" id="home">
-                <div class="homebox__img">
-                    <img src="/app/assets/profile.jpg">
-                </div>
-                <div class="homebox__intro">
-                    <span>
-                        Hi I am Mathan Prasanna Kumar
-                    </span>
-                </div>
-                <div class="homebox__about">
-                    <span>
-                        Passionate about computer vision and AI | I would love to unravel the mysteries of visual data for practical applications
-                    </span>
-                </div>
-                <div class="homebox__links">
-                    <a  href="https://github.com/mathanprasannakumar" target="_blank" alt="Mathan prasanna kumar github profile link "><i class="fab fa-github-square "></i></a>
-                    <a  href="https://www.linkedin.com/in/mathan-prasanna-kumar-s-338821283/" alt="mathanprasannakumar linkedin profile link" target="_blank"><i class="fab fa-linkedin "></i></a>
-                    <a  href="https://twitter.com/Mathanprasannak" alt ="mathanprasannakumar twitter profile link" target="_blank"><i class="fab fa-twitter-square "></i></a>
-                    <a  href= "mailto: mathanprasannakumar@gmail.com" alt ="mathanprasannakumar email link" target="_blank"><i class="fa fa-envelope-square "></i></a>
-                    <a  href= "https://auth.geeksforgeeks.org/user/mathanprasannakumar" alt ="mathanprasannakumar gfg link" target="_blank"><i class="fa fa-code"></i></a>
-                </div>
-                <div class="homebox__resume">
-                    <a href="./app/assets/resume.pdf" alt="mathanprasannakumar resume link" target="_blank">Resume</a>
-                </div>
+  <link rel="stylesheet" href="styles.css">
 
-            </section>
-            <section id ="aboutme" class="aboutbox">
-                <div class="aboutbox__summary" id="about">
-                    <p>I am a highly motivated professional with a passion for computer vision. With a strong background in engineering and a deep curiosity for emerging technologies, I made a conscious decision to transition my career into the exciting world of computer vision. Throughout my journey, I have dedicated significant time and effort to acquire in-depth knowledge and practical skills in this rapidly evolving field.Through personal projects and challenges, I have applied my knowledge to real-world scenarios, honing my abilities to analyze complex visual data and extract meaningful insights.I am excited to collaborate with like-minded professionals and  I am interested in exploring the fields of Software Engineering, Data Science, and Machine Learning, and I am open to opportunities for the same. </p>
-                </div>
-                <div class="aboutbox__skills">
-                    <div class="aboutbox__language">
-                        <span>Languages</span>
-                        <div class="row">
-                            <img src="/app/assets/c++.png">
-                            <img src="/app/assets/python.png">
-                            <img src="/app/assets/html5.png">
-                            <img src="/app/assets/css-3.png">
-                            <img src="/app/assets/js.png">
-                        </div>
-                        <p class="skillsum">My preferred languages for software engineering,data analysis and front-end web applications</p>
-                    </div>
-                    <div class="aboutbox__framework">
-                        <span>Frameworks</span>
-                        <div class="row">
-                            <img src="/app/assets/tensorflow.png">
-                            <img src="/app/assets/cmake.svg">
-                            <img src="/app/assets/tensorrt.png">
-                            <img src="/app/assets/nodejs.svg">   
-                            <img src="/app/assets/scikitlearn.png">
-                            <img src="/app/assets/opencv.png">
-                        </div>
-                        <p class="skillsum">My preferred framework for deep learning and computer vision models</p>
-                    </div>
-                    <div class="aboutbox__stack">
-                        <span>Tools</span>
-                        <div class="row">
-                            <!-- <img src="/app/assets/docker.png"> -->
-                            <img src="/app/assets/psql.png">
-                            <img src="/app/assets/vscode.png">
-                            <img src="/app/assets/git.png">
-                        </div>
-                        <p class="skillsum">My favorite tools for deployment,code editing and version control</p>
-                    </div>
-                </div>
-            </section>
-            <section class="project" id="projects">
-                <h3>Projects</h3>
-                <div class="project__box"> 
-                     <div class="subbox">
-                        <img src="/app/assets/srgan.jpg">
-                        <span>SR-GAN</span>
-                        <p> A generator model that super resolve the low resoluted image. Model is implemented and developed in tensorflow by referencing <b>Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network </b> paper</p>
-                        <div class="subbox__links">
-                            <a href="https://github.com/mathanprasannakumar/SR-GAN">Github</a>
-                        </div>
-                    </div>
-                    <div class="subbox">
-                        <img src="/app/assets/face.jpg">
-                        <span>Face recognition Web-App</span>
-                        <p>Face Attendance webapplication which will run on browser , and connected to postgreSQL database for registering the attendance.</p>
-                        <div class="subbox__links">
-                            <a href="https://github.com/mathanprasannakumar/FACE-ATTENDANCE-APP">Github</a>
-                            <a href="https://matensor.com/">Try Now</a>
-                        </div>
-                    </div>
-                    <div class="subbox">
-                        <img src="/app/assets/chatpdf.avif">
-                        <span>Chat-PDF</span>
-                        <p>A chat-pdf application for interacting with pdf. User can upload pdf and ask questions related to the uploaded documents.</p>
-                        <div class="subbox__links">
-                            <a href="https://github.com/mathanprasannakumar/CHAT-PDF">Github</a>
-                            <a href="https://matensor.com/chatpdf">Try Now</a>
-                        </div>
-                    </div>
-                    <div class="subbox">    
-                        <img src="/app/assets/jpeg.png">
-                        <span> JPEG ARTIFACT REMOVER </span>
-                        <p>A Generator model trained using NoGan method, which will remove the jpeg artifacts caused by the compression and recover the old image.</p>
-                        <div class="subbox__links">
-                            <a href="https://github.com/mathanprasannakumar/JPEG-ARTIFACT-REMOVER">Github</a>
-                            <!-- <a href="/home/project1">Try Now</a> -->
-                        </div>
-                    </div>
-                    <div class="subbox">    
-                        <img src="/app/assets/detection.jpeg">
-                        <span> Face detection</span>
-                        <p>Face detection system using VGG16 network,trained and tested from scratch.LFW dataset is used and manually annotated for training process</p>
-                        <div class="subbox__links">
-                            <a href="https://github.com/mathanprasannakumar/FaceDetection">Github</a>
-                        </div>
-                    </div>
-                     
-                    <div class="subbox">    
-                        <img src="/app/assets/mnist.png">
-                        <span> MNIST - Digit Classifier </span>
-                        <p>Implemented a MNIST handwritten recogniser with an accuracy of 99.6%.</p>
-                        <div class="subbox__links">
-                            <a href="https://github.com/mathanprasannakumar/MNIST-RECOGNIZERCNN">Github</a>
-                            <!-- <a href="/home/project1">Try Now</a> -->
-                        </div>
-                    </div>
-                </div>
-            </section>
-              <section class="internship" id="projects">
-                <h3>Experience</h3>
-                <div class="internship__box"> 
-                     <div class="cosubbox">
-                        <img src="/app/assets/robotoai.png">
-                        <span>Software developer (Vision Systems) @RobotoAI Technologies</span>
-                        <p>Developed Object recognition model on a 5mm chip  supporting the automation conveyer system and worked on vision based mobile robot localization 
-                        </p>
-                        <div class="cosubbox__links">
-                            <a href="">Certificate</a>
-                        </div>
-                    </div>
-                     <div class="cosubbox">
-                        <img src="/app/assets/exposys.jpeg">
-                        <span>Data Science Intern @Exposys Datalabs</span>
-                        <p>Learned Machine learning algorithms and Data analysis techniques. Employed Visualization and Statistical analysis
-to get insights from the dataset. Applied Machine Learning methodologies to predict the Profit given the
-expenditure data of companies</p>
-                        <div class="cosubbox__links">
-                            <a href="/app/assets/exposysinternship.pdf">Certificate</a>
-                        </div>
-                    </div>
-                    <div class="cosubbox">
-                        <img src="/app/assets/feynn.jpeg">
-                        <span>Machine Learning Intern @Feynn labs</span>
-                        <p>Developed prototype based on Machine learning and worked on customer market segmentation</p>
-                        <div class="cosubbox__links">
-                            <a href="">Certificate</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="end">
-            </div>
-        </footer>
-        <script src="/app/js/index.js">
-        </script>
-    </body>
+  <title>MathanPrasannaKumar</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Mathan Prasanna Kumar</a>
+    </div>
 
+    <div class="right">
+      <a href="/">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      
+      <a href="#skills">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <span>Skills</span>
+      </a>
+
+      <a href="#experience">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span>Experience</span>
+      </a>
+
+      <a href="#contact">
+        <i class="fa-solid fa-message"></i>
+        <span>Contact</span>
+      </a>  
+
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Mathan 👋</h2>
+        <p>Software Developer specializing in AI and robotics, providing smart automated solutions.
+            With expertise in C++ , Statistics and AI Methodologies.
+           I am currently dedicated to building and deploying AI powered systems for advanced automation.</p>
+
+        <div class="links">
+
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-file"></i>
+            <span>Resume</span>
+          </a>
+          
+          <a href="https://linkedin.com/in/mathanprasannakumar44" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>Linkedin</span>
+          </a>
+          
+          <a href="https://github.com/mathanprasannakumar" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+            <span>Github</span>
+          </a>
+
+          <a href="mailto:mathanprasannakumar44@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Gmail</span>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/headshot.jpeg" alt="Mathan Prasanna Kumar headshot">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <!-- <div class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, perspiciatis iure distinctio quidem aperiam necessitatibus omnis possimus excepturi amet quos rerum? Perferendis repellat natus saepe quaerat quibusdam neque recusandae optio?
+      </div> -->
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/c++.png" alt="C++ logo">
+          <span>C++</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/python.png" alt="python logo">
+          <span>Python</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/js.png" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/PyTorch.png" alt="pytorch logo">
+          <span>Pytorch</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/opencv.png" alt="opencv logo">
+          <span>OpenCV</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/ros-seeklogo.png" alt="ROS logo">
+          <span>ROS2</span>
+        </div>
+        
+        <div class="cell">
+            <img src="images/tensorrt.png" alt="tensorrt logo">
+            <span>TensorRT</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/docker.png" alt="docker logo">
+          <span>Docker</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/git.png" alt="git logo">
+          <span>Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Experience -->
+    <section id="experience" class="experience">
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="position">
+          <h3>Software Developer (Vision Systems)</h3>
+          <h3>@RobotoAI Technologies</h3>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Production Monitoring System</h3>
+            <p>Built a real-time monitoring system for detecting and 
+              tracking products on a conveyor using deep learning and OpenCV.</p>
+          </div>
+    
+          <div class="card">
+            <h3>Visual-Inertial Odometry</h3>
+            <p>Integrated stereo vision and IMU for localization and relocalization. Developed ROS2 nodes for efficient 
+              communication between hardware components</p>
+          </div>
+    
+          <div class="card">
+            <h3>Autonomous Docking</h3>
+            <p>Implemented autonomous docking feature using ArUco markers and integrated it with nav2 docking server to align with nav2 stack.</p>
+          </div>
+    
+          <div class="card">
+            <h3>Person Following Feature</h3>
+            <p>Developed a real-time person-following feature where used ByteTrack for efficient and accurate multi-object tracking and optimized models for accelerated inference</p>
+          </div>
+    
+          <div class="card">
+            <h3>Digital Altimeter</h3>
+            <p>Developed pressure based altitude calculation module where interfaced sensor via SPI and UART protocols.
+              Performed data acquisition and analysis for further integrations.</p>
+          </div>
+    
+          <div class="card">
+            <h3>Voice Command</h3>
+            <p>Built a voice to action feature for Autonomous mobile robot. Enabled the robot to understand and 
+              execute spoken instructions in realtime</p>
+          </div>
+        </div> 
+      </div>
+      <div class="job">
+        <div class="position">
+          <h3>Software Developer Intern</h3>
+          <h3>@RobotoAI Technologies</h3>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Beacon Localization</h3>
+            <p>Researched and Developed BLE based localization system for 
+              autonomous mobile robot improving the global localization in dynamic environments.</p>
+          </div>
+    
+          <div class="card">
+            <h3>Path Planning Algorithm</h3>
+            <p> Worked on Path planning algorithm enabling efficient navigation for line follower robot</p>
+          </div>
+    
+          <div class="card">
+            <h3>Peer to Peer Video Communication</h3>
+            <p>Developed a Peer-to-Peer video communication application providing high performance remote video calling functionality.</p>
+          </div>
+    
+          <div class="card">
+            <h3>Bolt classification</h3>
+            <p>Worked on a bolt classification task to distinguish between threaded and unthreaded bolts using YOLO and efficientnet models</p>
+          </div> 
+        </div>
+        
+      </div>
+    </section>
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <div class="group">
+        <div class="text">
+         <h3>Thanks for visiting</h3> 
+         <h3>Lets do great things together</h3>
+        </div>
+        <form id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10" name="message">
+          </textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("pv0d0HKw5aGx85_Iv");
+  })();
+</script>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_wv4twns', 'template_f5hs1l7', this)
+      .then(function() {
+        alert('Message sent successfully!');
+      }, function(error) {
+        alert('Failed to send message.\n' + JSON.stringify(error));
+      });
+
+    this.reset();
+  });
+</script>
 </html>
