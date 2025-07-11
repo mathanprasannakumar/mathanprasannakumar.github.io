@@ -178,6 +178,10 @@ nav .right a span {
   margin-bottom: 20px;
 }
 
+.position p{
+  margin: 5px 0;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -185,6 +189,7 @@ nav .right a span {
   margin-left: 20px;
   margin-bottom: 50px;
 }
+
 
 .card {
   background: #ffffff;
