@@ -57,7 +57,7 @@
 
         <div class="links">
 
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="data/Mathan_Prasanna_Kumar_S_Resume.pdf" target="_blank" rel="noopener noreferrer">
             <i class="fa-solid fa-file"></i>
             <span>Resume</span>
           </a>
@@ -152,36 +152,40 @@
         <div class="card-grid">
           <div class="card">
             <h3>Production Monitoring System</h3>
-            <p>Built a real-time monitoring system for detecting and 
-              tracking products on a conveyor using deep learning and OpenCV.</p>
+            <p>Led and developed a real-time production monitoring system to track products on the conveyor line, implementing
+YOLO and ByteTrack to distinctively identify closely stacked items, and logged the product information to a SQLite
+database and collaborated with the backend team to integrate the updates to a live dashboard</p>
           </div>
     
           <div class="card">
             <h3>Visual-Inertial Odometry</h3>
-            <p>Integrated stereo vision and IMU for localization and relocalization. Developed ROS2 nodes for efficient 
-              communication between hardware components</p>
+            <p>Integrated visual odometry and IMU from a stereo camera into the navigation stack to enhance localization and
+navigation of an autonomous mobile robot, and developed multithreaded ROS2 nodes for efficient communication
+between hardware components</p>
           </div>
     
           <div class="card">
             <h3>Autonomous Docking</h3>
-            <p>Implemented autonomous docking feature using ArUco markers and integrated it with nav2 docking server to align with nav2 stack.</p>
+            <p>Developed an autonomous docking system using ArUco markers by estimating pose with OpenCV, transforming
+coordinates to ROS frames, and integrating with the Nav2 docking server for precise alignment</p>
           </div>
     
           <div class="card">
             <h3>Person Following Feature</h3>
-            <p>Developed a real-time person-following feature where used ByteTrack for efficient and accurate multi-object tracking and optimized models for accelerated inference</p>
+            <p>Implemented a person following feature where optimized detection models using TensorRT for low-latency inference,
+and developed a motion controller for smooth and responsive movement</p>
           </div>
     
           <div class="card">
             <h3>Digital Altimeter</h3>
-            <p>Developed pressure based altitude calculation module where interfaced sensor via SPI and UART protocols.
-              Performed data acquisition and analysis for further integrations.</p>
+            <p>Developed a pressure-based altitude measurement system on MSP430, handling SPI and UART communication,
+real-time data acquisition, filtering raw data to compute accurate altitude</p>
           </div>
     
           <div class="card">
             <h3>Voice Command</h3>
-            <p>Built a voice to action feature for Autonomous mobile robot. Enabled the robot to understand and 
-              execute spoken instructions in realtime</p>
+            <p>Led the development of the Voice command feature, enabling the AMR to understand and execute the spoken
+instructions, and fine-tuned LLM to generate a custom command sequence for the audio instructions.</p>
           </div>
         </div> 
       </div>
@@ -194,23 +198,27 @@
         <div class="card-grid">
           <div class="card">
             <h3>Beacon Localization</h3>
-            <p>Researched and Developed BLE based localization system for 
-              autonomous mobile robot improving the global localization in dynamic environments.</p>
+            <p>Researched and developed a BLE based localization system for improving the global localization in dynamic
+environments. Handled data transmission from beacons to gateway through MQTT protocol, analyzed and applied low
+low-pass filter to the raw RSSI data, and developed a triangulation algorithm to find the gateway position</p>
           </div>
     
           <div class="card">
             <h3>Path Planning Algorithm</h3>
-            <p> Worked on Path planning algorithm enabling efficient navigation for line follower robot</p>
+            <p>Developed an A* path planning algorithm for the line follower robot to find the shortest trajectory between stations</p>
           </div>
     
           <div class="card">
             <h3>Peer to Peer Video Communication</h3>
-            <p>Developed a Peer-to-Peer video communication application providing high performance remote video calling functionality.</p>
+            <p>Implemented a peer-to-peer video streaming application by using the Gstreamer WebRTC plugin, enabling the user to
+teleoperate the robot at remote locations</p>
           </div>
     
           <div class="card">
             <h3>Bolt classification</h3>
-            <p>Worked on a bolt classification task to distinguish between threaded and unthreaded bolts using YOLO and efficientnet models</p>
+            <p>Developed a chip detection application to distinguish between the threaded and unthreaded chips. Used YOLO model
+and implemented the training and inference pipeline in Pytorch, and further optimized the model for accelerated
+inference in TensorRT</p>
           </div> 
         </div>
         
